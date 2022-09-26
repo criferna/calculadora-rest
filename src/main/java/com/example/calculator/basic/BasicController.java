@@ -28,7 +28,7 @@ public class BasicController {
       return getResult(minuent.subtract(subtrahend));
    }
 
-   @GetMapping("/multiply")
+/*   @GetMapping("/multiply")
    public ApiResult multiply(@RequestParam BigDecimal multiplier, @RequestParam BigDecimal multiplicand) {
       return getResult(multiplier.multiply(multiplicand));
    }
@@ -40,5 +40,5 @@ public class BasicController {
       }
       return getResult(dividend.divide(divisor, RoundingMode.HALF_EVEN));
    }
-
+*/
 }
