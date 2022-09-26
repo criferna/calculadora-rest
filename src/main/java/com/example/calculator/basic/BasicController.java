@@ -28,11 +28,11 @@ public class BasicController {
       return getResult(minuent.subtract(subtrahend));
    }
 
-   @GetMapping("/multiply")
+/*   @GetMapping("/multiply")
    public ApiResult multiply(@RequestParam BigDecimal multiplier, @RequestParam BigDecimal multiplicand) {
       return getResult(multiplier.multiply(multiplicand));
    }
-/*
+
    @GetMapping("/divide")
    public ApiResult divide(@RequestParam BigDecimal dividend, @RequestParam BigDecimal divisor) {
       if (divisor.equals(BigDecimal.ZERO)) {
