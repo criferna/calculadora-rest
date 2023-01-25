@@ -32,12 +32,12 @@ public class BasicController {
    public ApiResult multiply(@RequestParam BigDecimal multiplier, @RequestParam BigDecimal multiplicand) {
       return getResult(multiplier.multiply(multiplicand));
    }
-
+/*
    @GetMapping("/divide")
    public ApiResult divide(@RequestParam BigDecimal dividend, @RequestParam BigDecimal divisor) {
       if (divisor.equals(BigDecimal.ZERO)) {
          return getResultFromError("no division by null");
       }
       return getResult(dividend.divide(divisor, RoundingMode.HALF_EVEN));
-   }
+   }*/
 }
